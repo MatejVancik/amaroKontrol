@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="tab_highlight">#2fff</drawable>
+    <drawable name="list_view_highlight">#afff</drawable>
+    <drawable name="list_view_highlight_button">#1fff</drawable>
+    <drawable name="search_button_bcg">#a000</drawable>
+    
+    <drawable name="edit_text_normal">#aaa</drawable>
+    <drawable name="edit_text_focused">#fff</drawable>
+    <drawable name="edit_text_pressed">#ddd</drawable>
+
+    <color name="notificationText">#fff</color>
+    <color name="notificationButtonsBackground">#88000000</color>
+</resources>

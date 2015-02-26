@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">amaroKontrol</string>
+    <string name="action_settings">Opciones</string>
+    
+    <string name="menu_play_now">Reproduciendo</string>
+    <string name="menu_settings">Opciones</string>
+    <string name="menu_collection">Colecciones</string>
+    
+    <string name="pref_remote_server">Servidor remoto</string>
+    <string name="pref_remote_server_sum">dirección:puerto del guión del servidor Amarok. El puerto es opcional. (El puerto predeterminado 8484 se detecta automáticamente.)</string>
+    <string name="pref_update_interval">Intervalo de actualización</string>
+    <string name="pref_update_interval_sum">Tiempo entre actualizaciones</string>
+    <string name="pref_allow_3g">Permitir datos móviles</string>
+    <string name="pref_allow_3g_sum">Permite a amaroKontrol usar paquetes de datos para conectarse al reproductor Amarok</string>
+    <string name="pref_volume_change">Usar botones de volumen</string>
+    <string name="pref_volume_change_sum">Cambia el volumen con los botones de volumen</string>
+    <string name="pref_show_notify">Mostrar Notificación</string>
+    <string name="pref_show_notify_sum">Mostrar notificación sobre la pista en reproducción.</string>
+    <string name="pref_notify_photo">Mostrar Foto</string>
+    <string name="pref_notify_photo_sum">Mostrar foto del artista en la notificación expandida</string>
+    <string name="pref_notify_interval">Intervalo de actualización de notificación</string>
+    <string name="pref_notify_interval_sum">Tiempo entre las actualizaciones de notificación fuera de la aplicación</string>
+    <string name="pref_notify_interval_title">Actualizar después</string>
+    <string name="pref_interval">Intervalo de actualización</string>
+    <string name="pref_interval_sum">Tiempo entre actualizaciones</string>
+    <string name="pref_interval_title">Actualizar después</string>
+    <string name="pref_vol_step">Intervalo de volumen</string>
+    <string name="pref_vol_step_sum">Aumenta/disminuye volumen en</string>
+    <string name="pref_vol_step_title">Elija intervalo de volumen</string>
+    <string name="pref_close_playlist">Cerrar lista de reproducción al cambiar canción</string>
+    <string name="pref_close_playlist_sum">Coloca la lista de reproducción en segundo plano al cambiar canción</string>
+    <string name="pref_clean_cache">Limpiar caché</string>
+    <string name="pref_clean_cache_sum">Limpiar caché de carátulas y fotos de artistas</string>
+    <string name="pref_clean_cache_running">Limpiando..</string>
+    <string name="pref_clean_cache_OK">¡Limpieza completada!</string>
+    <string name="pref_clean_cache_error">¡Error durante la limpieza!</string>
+    
+    <!-- 	NEW       -->
+    <string name="pref_background_blur_title">Elegir Intensidad</string>
+    <string name="pref_background_blur">Intensidad del difuminado de fondo</string>
+    <string name="pref_background_blur_sum">Elija la intensidad del efecto del fondo.</string>    
+    <string name="pref_blur_slight">Leve</string>
+    <string name="pref_blur_moderate">Normal</string>
+    <string name="pref_blur_strong">Fuerte</string>
+    <string name="pref_blur_insane">Extremo</string>
+	
+	<string name="collection_no_amarok">Parece no haber un Amarok para controlar</string>
+	<string name="collection_no_music">Su colección está vacía.</string>
+	
+	<string name="download">Descargar</string>
+	<string name="remove">Eliminar</string>
+    <!-- 	NEW       -->
+    
+    <string name="pref_connection_group">Conexión</string>
+    <string name="pref_misc_group">Otros</string>
+    <string name="pref_notifications_group">Notificaciones</string>
+    
+    <string name="update_one">Un segundo</string>
+    <string name="update_two">Dos segundos</string>
+    <string name="update_three">Tres segundos</string>
+    <string name="update_five">Cinco segundos</string>
+    <string name="update_ten">Diez segundos</string>
+    
+    <string name="step_one">Uno porciento</string>
+    <string name="step_two">Dos porciento</string>
+    <string name="step_three">Tres porciento</string>
+    <string name="step_five">Cinco porciento</string>
+    <string name="step_ten">Diez porciento</string>
+    
+    <string name="navbar_caching">Almacenando fotos:</string>
+    <string name="navbar_downloading_song">Descargando canción:</string>
+    <string name="not_playing">Detenido</string>
+    <string name="press_play">Presione reproducir</string>
+    <string name="click_playlist_item">o toque una canción en la lista de reproducción.</string>
+    <string name="amarok_not_on">Amarok no se está ejecutando</string>
+    <string name="amarok_bad_ip">o la IP es incorrecta</string>
+    <string name="connection_unavailable">Conexión no disponible</string>
+    <string name="please_turn_on_wifi">Por favor encienda el Wi-Fi</string>
+    <string name="enable_3g">o habilite la conexión de datos móviles</string>
+    <string name="playlist_refresh">Toque para actualizar la lista de reproducción</string>
+    <string name="not_connected">¡Desconectado!</string>
+
+    <string name="search_too_many">Por favor, especifique más detalles en la búsqueda</string>
+    <string name="search_not_found">Ningún elemento encontrado</string>
+    <string name="search_holder">Buscar en la colección</string>
+    <string name="search">BUSCAR</string>
+    
+    <string name="help">Ayuda</string>
+    <string name="help_settings">En Amarok vaya a Preferencias > Configurar Amarok... </string>
+	<string name="help_script">En el lado izquierdo seleccione guiones, del lado inferior derecho seleccione Gestionar Guiones.</string>
+	<string name="help_kontrol">Busque "amaroKontrol" y seleccione instalar al lado.</string>
+	<string name="help_kontrol_update">Busque "amaroKontrol" y seleccione actualizar al lado.</string>
+	<string name="help_restart">Reinicie Amarok y habrá terminado.</string>
+	<string name="help_update_title">ACTUALIZAR</string>
+	<string name="help_update_subtitle">Usted está usando una versión antigua del guión de Amarok. Por favor siga estos pasos para actualizarlo:</string>
+	<string name="update_script">Por favor, Actualice el guión para Amarok.</string>
+
+	<string name="request_feature">Solicitar característica</string>
+	<string name="report_bug">Reportar fallo</string>
+
+	<string name="no_lyrics">No hay letra de canción.</string>
+</resources>

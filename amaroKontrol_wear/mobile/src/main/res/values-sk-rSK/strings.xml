@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">amaroKontrol</string>
+    <string name="action_settings">Nastavenia</string>
+    
+    <string name="menu_play_now">Práve hraje</string>
+    <string name="menu_settings">Nastavenia</string>
+    <string name="menu_collection">Kolekcia</string>
+    
+    <string name="pref_remote_server">Vzdialený počítač</string>
+    <string name="pref_remote_server_sum">IP:port počítača na ktorom beží Amarok. Port nie je potrebné zadať, ak ste ho v skripte nezmenili. (Predvolená hodnota portu je 8484)</string>
+    <string name="pref_update_interval">Interval aktualizácie</string>
+    <string name="pref_update_interval_sum">Čas medzi aktualizáciami informácii z počítača</string>
+    <string name="pref_allow_3g">Povoliť mobilne dáta</string>
+    <string name="pref_allow_3g_sum">Povolí použitie mobilných dát na pripojenie k Amaroku</string>
+    <string name="pref_vol_step">Krok zmeny hlasitosti</string>
+    <string name="pref_vol_step_sum">Počet percent zvýšenej/zníženej hlasitosti po stlačení tlačidla hlasitosti</string>
+    <string name="pref_volume_change">Používať tlačidla hlasitosti</string>
+    <string name="pref_volume_change_sum">Povolí zmeniť hlasitosť prehrávania pomocou tlačidiel na zmenu hlasitosti</string>
+    <string name="pref_show_notify">Zobraziť upozornenia</string>
+    <string name="pref_show_notify_sum">Pobrazí upozornenie informujúce o aktuálne prehrávanej skladbe</string>
+    <string name="pref_notify_photo">Zobraziť fotografiu interpréta</string>
+    <string name="pref_notify_photo_sum">V upozornení sa bude zobrazovať fotografia interpréta</string>
+    <string name="pref_notify_interval">Interval aktualizácie upozornenia</string>
+    <string name="pref_notify_interval_sum">Čas medzi aktualizáciami informácií zobrazovaných v upozornení</string>
+    <string name="pref_notify_interval_title">Aktualizovať po čase</string>
+    <string name="pref_interval">Interval aktualizácie</string>
+    <string name="pref_interval_sum">Čas medzi aktualizáciami informácií z počítača</string>
+    <string name="pref_interval_title">Aktualizovať po čase</string>
+    <string name="pref_vol_step_title">Vyberte hodnotu zmeny</string>
+    <string name="pref_close_playlist">Skryť playlist po zmene piesne</string>
+    <string name="pref_close_playlist_sum">Playlist sa zasunie pod hlavnú obrazovku po ťuknutí na niektorú skladbu v ňom</string>
+    <string name="pref_clean_cache">Vyčistiť dočastnú pamäť</string>
+    <string name="pref_clean_cache_sum">Vymaže všetky fotografie a uložené obrázky albumov z pamäte</string>
+    <string name="pref_clean_cache_running">Vymazávam...</string>
+    <string name="pref_clean_cache_OK">Dočastná pamäť úspešne vyčistená</string>
+    <string name="pref_clean_cache_error">Počas čistenia dočastnej pamäte nastala neznáma chyba!</string>
+    
+    <!-- 	NEW       -->
+    <string name="pref_background_blur_title">Vyberte intenzitu</string>
+    <string name="pref_background_blur">Intenzita rozmazania pozadia</string>
+    <string name="pref_background_blur_sum">Nastaví intenzitu rozmazania pozadia v aplikácii</string>    
+    <string name="pref_blur_slight">Slabá</string>
+    <string name="pref_blur_moderate">Normálna</string>
+    <string name="pref_blur_strong">Silná</string>
+    <string name="pref_blur_insane">Šialená</string>
+    
+    <string name="collection_no_amarok">Vyzerá to tak,\nže je amarok nedostupný.</string>
+	<string name="collection_no_music">To je smutné.\nNemáte žiadnu hudbu.</string>
+	
+	<string name="download">Stiahnúť</string>
+	<string name="remove">Odstrániť</string>
+    <!-- 	NEW       -->
+    
+    <string name="pref_connection_group">Pripojenie</string>
+    <string name="pref_misc_group">Ostatné</string>
+    <string name="pref_notifications_group">Upozornenia</string>
+    
+    <string name="search_too_many">Prosím, upresnite hľadanie</string>
+    <string name="search_not_found">Nič také sa v knižnici nenašlo</string>
+    <string name="search_holder">Hľadať v knižnici</string>
+    <string name="search">HĽADAŤ</string>
+    
+    <string name="update_one">Sekunda</string>
+    <string name="update_two">Dve sekundy</string>
+    <string name="update_three">Tri sekundy</string>
+    <string name="update_five">Päť sekúnd</string>
+    <string name="update_ten">Desať sekúnd</string>
+    
+    <string name="step_one">Jedno percento</string>
+    <string name="step_two">Dve percentá</string>
+    <string name="step_three">Tri percentá</string>
+    <string name="step_five">Päť percent</string>
+    <string name="step_ten">Desať percent</string>
+    
+    <string name="navbar_caching">Sťahujem fotografie:</string>
+    <string name="navbar_downloading_song">Sťahujem pieseň:</string>
+    <string name="not_playing">Neprehráva</string>
+    <string name="press_play">Stlačte play</string>
+    <string name="click_playlist_item">alebo ťuknite na pieseň v playliste.</string>
+    <string name="amarok_not_on">Amarok nebeží</string>
+    <string name="amarok_bad_ip">alebo je nastavená zlá IP adresa</string>
+    <string name="connection_unavailable">Pripojenie nedostupné</string>
+    <string name="please_turn_on_wifi">Prosím, zapnite Wi-Fi</string>
+    <string name="enable_3g">alebo povoľte mobilne dáta v nastaveniach aplikácie</string>
+    <string name="playlist_refresh">Dotykom obnovíte zoznam</string>
+    <string name="not_connected">Pripojenie nedostupné!</string>
+    
+    <string name="help">Pomoc</string>
+	<string name="help_settings">V Amaroku kliknite na Settings > Configure Amarok... </string>
+	<string name="help_script">Na ľavej strane kliknite na Scripts, a potom dole vpravo na Manage Scripts.</string>
+	<string name="help_kontrol">Zadajte "amaroKontrol" do vyhľadávacieho poľa a kliknite na install hneď vedľa.</string>
+	<string name="help_kontrol_update">Zadajte "amaroKontrol" do vyhľadávacieho poľa a kliknite na update hneď vedľa.</string>
+	<string name="help_restart">Reštartujte Amarok.</string>
+	<string name="help_update_title">AKTUALIZÁCIA</string>
+	<string name="help_update_subtitle">Používate zastaralú verziu skriptu pre amarok. Prosím aktualizujte skript pomocou nasledujúcich krokov:</string>
+	<string name="update_script">Prosím, aktualizujte script pre amarok.</string>
+	
+	<string name="request_feature">Žiadať funkciu</string>
+	<string name="report_bug">Nahlásiť chybu</string>
+	
+	<string name="no_lyrics">Žiadne texty.</string>
+</resources>

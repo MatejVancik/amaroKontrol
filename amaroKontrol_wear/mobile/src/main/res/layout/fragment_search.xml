@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingTop="?android:attr/actionBarSize" >
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5000"/>
+    
+    <View 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="#a000"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/fragment_search_list"  />
+    
+    <RelativeLayout
+        android:id="@+id/fragment_search_top_lay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#a000" >
+
+        <ImageButton
+            android:id="@+id/fragment_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/artist_detail_click_selector"
+            android:src="@drawable/search_big"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/fragment_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:hint="@string/search_holder"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:background="@drawable/apptheme_edit_text_holo_dark"
+            android:layout_toLeftOf="@+id/fragment_search_button" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fragment_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_search_top_lay"
+        android:divider="#000"
+        android:fastScrollEnabled="true"
+        android:background="#a000"/>
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/fragment_search_not_found"
+        style="@style/PlayNowArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="@string/search_not_found"
+        android:layout_below="@+id/fragment_search_top_lay"
+        android:layout_alignParentBottom="true" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/fragment_search_too_many"
+        style="@style/PlayNowArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:visibility="gone"
+        android:text="@string/search_too_many"
+        android:layout_below="@+id/fragment_search_top_lay"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

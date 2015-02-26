@@ -1,0 +1,72 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- <item name="android:windowActionBarOverlay">true</item> -->
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="DividerVertical">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="PlayNowText">
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    
+    
+    
+    <style name="PlayNowTitle" parent="@style/PlayNowText"/>
+    
+    <style name="PlayNowArtist" parent="@style/PlayNowText"/>
+    
+    <style name="PlayNowAlbum" parent="@style/PlayNowText"/>
+    
+    <style name="HelpStyle">
+		<item name="android:textSize">14dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+	<style name="RadioButton" parent="@android:style/Widget.CompoundButton.RadioButton">
+   		<item name="android:button">@drawable/navtab_selector</item>
+	</style>
+
+</resources>

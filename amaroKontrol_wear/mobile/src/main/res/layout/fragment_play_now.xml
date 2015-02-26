@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    android:clipChildren="false"
+    tools:context=".PlayNow" >
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/songTitle"
+        style="@style/PlayNowArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/artist"
+        style="@style/PlayNowArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songTitle"
+        android:layout_marginTop="-6dp"
+        android:fontFamily="sans-serif"
+        android:textSize="20sp" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/albumTitle"
+        style="@style/PlayNowAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#dddddd"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin" >
+
+        <ImageButton
+            android:id="@+id/playPause"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/play_act" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/playPause"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/next_act" />
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/playPause"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/prev_act" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relPlayNow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonsLayout"
+        android:layout_below="@id/albumTitle"
+        android:clipChildren="false"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:layout_centerInParent="true" >
+
+            <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+                android:id="@+id/length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/songSeek"
+                android:layout_below="@+id/songSeek"
+                android:fontFamily="sans-serif-light"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+                android:id="@+id/position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/length"
+                android:layout_alignLeft="@+id/songSeek"
+                android:layout_below="@+id/songSeek"
+                android:fontFamily="sans-serif-light"
+                android:shadowColor="#000000"
+                android:shadowDx="0"
+                android:shadowDy="1"
+                android:shadowRadius="1"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/artt"
+                android:scaleType="fitXY"
+                android:src="@drawable/album" />
+
+            <SeekBar
+                android:id="@+id/songSeek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/cover"
+                android:layout_alignRight="@id/cover"
+                android:layout_below="@id/cover"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="-25dp"
+                android:maxHeight="16dp"
+                android:minHeight="16dp"
+                android:progressDrawable="@drawable/seekbar_progress"
+                android:thumb="@drawable/seekbarbuttonselector"
+                android:thumbOffset="9dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

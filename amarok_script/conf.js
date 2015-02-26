@@ -1,0 +1,4 @@
+PORT = 8484;
+SHORTEN1 = 45;
+SHORTEN2 = 45;
+

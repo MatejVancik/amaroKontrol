@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/artist_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="1px">
+
+    <ImageView
+        android:id="@+id/artist_item_cover"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:cropToPadding="true"
+        android:padding="6dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_collection_artist" />
+
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/artist_item_title"
+        style="@style/PlayNowArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/artist_item_cover"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="15dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:font="creg" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/artist_item_album_song"
+        style="@style/PlayNowText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_item_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@+id/artist_item_cover"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#cccccc"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:font="clight" />
+
+
+</RelativeLayout>

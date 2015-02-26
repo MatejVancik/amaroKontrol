@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="artist_mini_photo_dimen">160</integer>
+    <integer name="playlist_cover_dimen">140</integer>
+    <integer name="notify_cover_dimen">256</integer>
+</resources>
+  

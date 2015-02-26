@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true" >
+
+    <ImageView
+        android:id="@+id/main_background1"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/main_background2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+
+    <fragment
+        android:id="@+id/fragPlayNow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.mv2studio.amarok.kontrol.ui.Fragment.PlayNowFragment"
+        android:tag="fragPlayNow"
+        android:layout_marginTop="@dimen/actionbar_size"
+        tools:layout="@layout/fragment_play_now" />
+
+    <fragment
+        android:id="@+id/fragCollection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.mv2studio.amarok.kontrol.ui.Fragment.CollectionFragment"
+        android:tag="fragCollection" />
+
+    <fragment
+        android:id="@+id/fragArtistDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.mv2studio.amarok.kontrol.ui.Fragment.ArtistFragment"
+        android:tag="fragArtistDetail"
+        tools:layout="@layout/fragment_artist_detail" />
+
+    <fragment
+        android:id="@+id/fragSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.mv2studio.amarok.kontrol.ui.Fragment.SearchFragment"
+        android:tag="fragSearch" />
+
+</RelativeLayout>

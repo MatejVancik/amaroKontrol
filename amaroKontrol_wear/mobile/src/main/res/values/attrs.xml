@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="font" format="enum">
+        <enum name="bold" value="0"/>
+        <enum name="cbold" value="1"/>
+        <enum name="clight" value="2"/>
+        <enum name="creg" value="3"/>
+        <enum name="ebold" value="4"/>
+        <enum name="light" value="5"/>
+        <enum name="med" value="6"/>
+        <enum name="reg" value="7"/>
+        <enum name="thin" value="8"/>
+    </attr>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="font" />
+    </declare-styleable>
+
+</resources>

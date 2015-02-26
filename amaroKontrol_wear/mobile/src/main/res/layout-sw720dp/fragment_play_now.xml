@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?android:attr/actionBarSize"
+    tools:context=".PlayNow" >
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/songTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        style="@style/PlayNowArtist"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/songTitle"
+        style="@style/PlayNowArtist"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="-6dp"/>
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/albumTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist"
+        style="@style/PlayNowAlbum"
+        android:layout_marginTop="-4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#dddddd"
+        android:textSize="14sp"/>
+    
+
+    <RelativeLayout 
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        
+        <ImageButton
+	        android:id="@+id/playPause"
+	        android:layout_width="100dp"
+	        android:layout_height="100dp"
+	        android:background="@android:color/transparent"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/play_act" 
+	        android:layout_centerHorizontal="true"/>    
+	
+	    <ImageButton
+	        android:id="@+id/next"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_toRightOf="@id/playPause"
+	        android:background="@android:color/transparent"
+	        android:scaleType="centerInside"
+	        android:layout_alignParentBottom="true"
+	        android:src="@drawable/next_act" />
+
+	    <ImageButton
+	        android:id="@+id/prev"
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:layout_alignParentBottom="true"
+	        android:background="@android:color/transparent"
+	        android:scaleType="centerInside"
+	        android:src="@drawable/prev_act"
+	        android:layout_toLeftOf="@id/playPause"/>
+	</RelativeLayout>
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <ScrollView
+            android:id="@+id/lyricsScroll"
+            android:layout_above="@id/buttonsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="450dp"
+            android:layout_margin="20dp"
+            android:scrollbars="none" >
+            
+            <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+                android:id="@+id/lyrics"
+                style="@style/lyricsStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal" />
+            
+        </ScrollView>
+        
+        <View 
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_alignTop="@id/lyricsScroll"
+            android:layout_alignLeft="@id/lyricsScroll"
+            android:layout_alignRight="@id/lyricsScroll"
+            android:background="#66000000"/>
+        
+        <View 
+            android:layout_height="1px"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/lyricsScroll"
+            android:layout_alignLeft="@id/lyricsScroll"
+            android:layout_alignRight="@id/lyricsScroll"
+            android:background="#66000000"/>
+        
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignTop="@id/lyricsScroll"
+            android:layout_alignLeft="@id/lyricsScroll"
+            android:layout_alignRight="@id/lyricsScroll"
+            android:src="@drawable/shdw"
+            android:scaleType="fitXY"/>
+        
+         <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@id/lyricsScroll"
+            android:layout_alignLeft="@id/lyricsScroll"
+            android:layout_alignRight="@id/lyricsScroll"
+            android:src="@drawable/shup"
+            android:scaleType="fitXY"/>
+    
+         <include layout="@layout/play_now_cover_seek"
+             android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/lyricsScroll"
+        android:layout_alignParentTop="false"
+        android:layout_below="@id/albumTitle"
+        android:layout_centerVertical="false" 
+             />
+         
+    
+</RelativeLayout>

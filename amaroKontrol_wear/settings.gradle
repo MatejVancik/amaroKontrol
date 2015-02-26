@@ -1,0 +1,3 @@
+include ':mobile', ':wear', ':slidingmenu', ':swipelistview', ':phoneWearShared'
+project(':slidingmenu').projectDir = new File('mobile/libs/slidingmenu')
+project(':swipelistview').projectDir = new File('mobile/libs/swipelistview')

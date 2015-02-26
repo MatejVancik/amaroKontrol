@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/detail_highlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/listSongCover"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/artist_detail_click_selector" />
+
+    <ImageView
+        android:id="@+id/listSongCover"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:adjustViewBounds="true"
+        android:padding="6dp"
+        android:scaleType="fitStart" />
+
+    <View
+        android:id="@+id/detail_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/listSongCover"
+        android:background="#000000" />
+
+    <Button
+        android:id="@+id/detail_song_highlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/detail_divider"
+        android:background="@drawable/artist_detail_click_selector" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/listSongTitle"
+        style="@style/PlayNowTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/detail_divider"
+        android:layout_marginLeft="3dp"
+        android:layout_toLeftOf="@+id/listSongAddedIcon"
+        android:paddingBottom="8dp"
+        android:paddingTop="10dp"
+        android:textStyle="normal"
+        app:font="clight" />
+
+    <ImageView
+        android:id="@+id/listSongAddedIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/listSongTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listSongTitle"
+        android:scaleType="centerInside"
+        android:src="@drawable/added"
+        android:visibility="invisible" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/listSongAlbum"
+        style="@style/PlayNowArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/listAlbumAddedIcon"
+        android:layout_toRightOf="@id/listSongCover"
+        android:paddingBottom="4dp"
+        android:paddingTop="16dp"
+        android:textSize="24sp"
+        app:font="clight" />
+
+    <ImageView
+        android:id="@+id/listAlbumAddedIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/listSongAlbum"
+        android:layout_alignParentRight="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/added"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="actionbar_size">60dp</dimen>
+
+</resources>

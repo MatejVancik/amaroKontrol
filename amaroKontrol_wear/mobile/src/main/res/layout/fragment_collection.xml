@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/artists_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="#000000"
+        android:fadingEdge="vertical"
+        android:fastScrollEnabled="true"
+        android:listSelector="@drawable/artist_detail_click_selector_dark"
+        android:paddingTop="?android:attr/actionBarSize"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbHorizontal="@drawable/apptheme_fastscroll_thumb_holo"
+        android:scrollbarThumbVertical="@drawable/apptheme_fastscroll_thumb_holo"
+        android:scrollbars="vertical"
+        android:scrollingCache="true" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_artists_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:gravity="center"
+        android:layout_marginTop="?android:attr/actionBarSize" >
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:drawableTop="@drawable/empty_col"
+                android:id="@+id/fragment_artists_empty_text"
+                style="@style/PlayNowArtist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:visibility="invisible"
+                android:lines="3"
+                android:maxLines="3"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

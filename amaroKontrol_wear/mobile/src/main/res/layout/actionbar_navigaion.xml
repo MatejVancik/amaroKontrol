@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="?android:attr/actionBarSize">
+
+    <RadioGroup
+        android:id="@+id/nav_tab_radios"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/nav_tab_radio_play_now"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/navtab_selector"
+            android:button="@android:color/transparent" >
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/nav_tab_radio_collection"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@drawable/navtab_selector"
+            android:button="@android:color/transparent" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/nav_tab_ic_play_now"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/navtab_selector"
+        android:clickable="false" >
+
+        <ImageView
+            android:id="@+id/nav_tab_play_now_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_tab_play_now_highlight"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_now_play_tab"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside" />
+
+        <View
+            android:id="@+id/nav_tab_play_now_highlight"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#aaffffff"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/nav_tab_divider"
+        android:layout_width="1px"
+        android:layout_height="?android:attr/actionBarSize"
+        android:paddingBottom="12dp"
+        android:paddingTop="12dp"
+        android:src="#aaffffff" 
+        android:layout_toRightOf="@+id/nav_tab_ic_play_now"
+        />
+
+    <RelativeLayout
+        android:id="@+id/nav_tab_ic_collection"
+        android:layout_width="?android:attr/actionBarSize"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginLeft="1px"
+         android:layout_toRightOf="@+id/nav_tab_divider"
+        android:background="@drawable/navtab_selector"
+        android:clickable="false" >
+
+        <ImageView
+            android:id="@+id/nav_tab_collection_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/nav_tab_collection_highlight"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_collection_tab" />
+
+        <View
+            android:id="@+id/nav_tab_collection_highlight"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#aaffffff"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/actionbar_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/nav_tab_radios"
+        android:visibility="invisible"
+        android:layout_toLeftOf="@+id/navigation_buttons_search" >
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:id="@+id/actionbar_status_message"
+            style="@style/PlayNowArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:font="creg"
+            android:layout_marginRight="-15dp"
+            android:layout_toLeftOf="@+id/actionbar_status_button"
+            android:gravity="right"
+            android:text="@string/running" />
+
+        <ImageButton
+            android:id="@+id/actionbar_status_button"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/x" />
+    </RelativeLayout>
+    
+    <ImageButton 
+        android:id="@+id/navigation_buttons_search"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:src="@drawable/search"
+        android:visibility="gone"
+        android:background="@drawable/artist_detail_click_selector"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

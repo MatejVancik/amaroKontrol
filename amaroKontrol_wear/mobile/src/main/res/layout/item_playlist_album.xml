@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="40dp"
+        android:focusable="false"
+        android:orientation="horizontal"
+        android:tag="back"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/playlist_back_view_download"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/artist_detail_click_selector">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/playlist_back_view_download_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/down_big" />
+
+                <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+                    android:id="@+id/playlist_back_view_download_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playlist_back_view_download_image"
+                    android:gravity="center_horizontal"
+                    android:text="@string/download"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    app:font="creg" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/playlist_back_view_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/artist_detail_click_selector">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/playlist_back_view_remove_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="center"
+                    android:src="@drawable/trash_big" />
+
+                <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+                    android:id="@+id/playlist_back_view_remove_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playlist_back_view_remove_image"
+                    android:gravity="center_horizontal"
+                    android:text="@string/remove"
+                    android:textColor="#fff"
+                    android:textSize="18sp"
+                    app:font="creg" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:tag="front">
+
+        <ImageView
+            android:id="@+id/listSongCover"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:padding="6dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/blank_album" />
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:id="@+id/listSongTitle"
+            style="@style/PlayNowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listSongCover"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@+id/listSongPlayingIcon"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="normal"
+            app:font="clight" />
+
+        <ImageView
+            android:id="@+id/listSongPlayingIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/listSongTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/listSongTitle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_now_play_tab"
+            android:visibility="gone" />
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:id="@+id/listSongArtist"
+            style="@style/PlayNowArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/listSongCover"
+            android:textSize="24sp"
+            app:font="cbold" />
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:id="@+id/listSongAlbum"
+            style="@style/PlayNowAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/listSongArtist"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@id/listSongCover"
+            android:textSize="14sp"
+            app:font="clight" />
+    </RelativeLayout>
+
+</FrameLayout>

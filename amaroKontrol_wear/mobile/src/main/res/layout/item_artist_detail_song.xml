@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_front_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="3dp"
+    android:paddingRight="3dp">
+
+    <ImageView
+        android:id="@+id/listSongPlayingIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/listSongTitle"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listSongTitle"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_now_play_tab"
+        android:visibility="gone" />
+
+    <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+        android:id="@+id/listSongTitle"
+        style="@style/PlayNowTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_toLeftOf="@+id/listSongAddedIcon"
+        android:layout_toRightOf="@+id/listSongPlayingIcon"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:font="clight" />
+
+    <ImageView
+        android:id="@+id/listSongAddedIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/listSongTitle"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listSongTitle"
+        android:scaleType="centerInside"
+        android:src="@drawable/added"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

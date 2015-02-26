@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="128dp">
+
+
+    <ImageView
+        android:id="@+id/notifyCover"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:maxHeight="24dp"
+        android:maxWidth="24dp"
+        android:padding="@dimen/notificaitonIconMargin"
+        android:minHeight="24dp"
+        android:minWidth="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_notification" />
+
+    <TextView
+        android:id="@+id/notifyAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/notifyTitle"
+        android:layout_below="@+id/notifyArtist"
+        android:layout_toRightOf="@id/notifyCover"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/notificationText" />
+
+    <TextView
+        android:id="@+id/notifyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/notifyExit"
+        android:layout_toRightOf="@id/notifyCover"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:paddingTop="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/notificationText"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/notifyArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notifyTitle"
+        android:layout_toLeftOf="@+id/notifyExit"
+        android:layout_toRightOf="@id/notifyCover"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:paddingRight="4dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/notificationText" />
+
+    <ImageButton
+        android:id="@+id/notifyExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/button_background"
+        android:scaleType="centerInside"
+        android:src="@drawable/exit" />
+
+    <ImageView
+        style="@style/Divider"
+        android:layout_above="@+id/lay"
+        android:layout_toRightOf="@id/notifyCover" />
+
+    <LinearLayout
+        android:id="@+id/lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/notifyCover"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/notifyPrev"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/prev" />
+
+        <ImageView
+            style="@style/DividerVertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp" />
+
+        <ImageButton
+            android:id="@+id/notifyPlay"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:cropToPadding="true"
+            android:maxHeight="12dp"
+            android:maxWidth="55dp"
+            android:padding="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/play" />
+
+        <ImageView
+            style="@style/DividerVertical"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp" />
+
+        <ImageButton
+            android:id="@+id/notifyNext"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_background"
+            android:cropToPadding="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/next" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

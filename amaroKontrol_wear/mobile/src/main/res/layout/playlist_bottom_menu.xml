@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/playlist_menu_height"
+    android:orientation="horizontal"
+	android:id="@+id/playlist_bottom_menu"
+    android:background="#cc000000" >
+
+    <ImageButton
+        android:id="@+id/playlist_bottom_menu_jump"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/artist_detail_click_selector"
+        android:src="@drawable/jump"/>
+    
+    <View 
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+    
+
+
+    <ImageButton
+        android:id="@+id/playlist_bottom_menu_refresh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/artist_detail_click_selector"
+        android:src="@drawable/refresh"/>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#000"/>
+
+    <ImageButton
+        android:id="@+id/playlist_bottom_menu_clear"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/artist_detail_click_selector"
+        android:src="@drawable/clear"/>
+
+</LinearLayout>

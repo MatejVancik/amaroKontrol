@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_settings"
+        android:showAsAction="never"
+        android:title="@string/action_settings"
+        />
+    
+    <item
+        android:id="@+id/menu_help"
+        android:showAsAction="never"
+        android:title="@string/help"
+        />    
+    
+    <item
+        android:id="@+id/menu_feature"
+        android:showAsAction="never"
+        android:title="@string/request_feature"
+        />
+    
+    <item
+        android:id="@+id/menu_bug"
+        android:showAsAction="never"
+        android:title="@string/report_bug"
+        />
+
+</menu>

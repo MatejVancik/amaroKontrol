@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@android:color/transparent">
+
+    <ImageView
+        android:id="@+id/notifyCover"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/notificaitonIconMargin"
+        android:src="@drawable/ic_notification" />
+
+    <ImageButton
+        android:id="@+id/notifyExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/artist_detail_click_selector"
+        android:scaleType="centerInside"
+        android:src="@drawable/exit" />
+
+    <TextView
+        android:id="@+id/notifyTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="false"
+        android:layout_toLeftOf="@+id/notifyPlay"
+        android:layout_toRightOf="@+id/notifyCover"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:gravity="bottom"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/notificationText"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/notifyArtist"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_toLeftOf="@+id/notifyPlay"
+        android:layout_toRightOf="@+id/notifyCover"
+        android:ellipsize="marquee"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:paddingLeft="8dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/notificationText" />
+
+    <ImageButton
+        android:id="@+id/notifyNext"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/notifyExit"
+        android:background="@drawable/artist_detail_click_selector"
+        android:scaleType="centerInside"
+        android:src="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/notifyPlay"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/notifyNext"
+        android:background="@drawable/artist_detail_click_selector"
+        android:scaleType="centerInside"
+        android:src="@drawable/play" />
+
+</RelativeLayout>

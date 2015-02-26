@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/playlist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/playlist_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/playlist_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/refresh"
+        android:visibility="invisible" />
+
+    <com.fortysevendeg.swipelistview.SwipeListView
+        xmlns:swipe="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/playlistView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-1px"
+        android:layout_marginTop="-1px"
+        android:clipToPadding="false"
+        android:divider="#000000"
+        android:fastScrollEnabled="true"
+        android:scrollbars="vertical"
+    	android:scrollbarStyle="outsideOverlay"
+        android:dividerHeight="1px"
+        android:listSelector="@drawable/artist_detail_click_selector_dark"
+        android:paddingBottom="@dimen/playlist_menu_height"
+        swipe:swipeBackView="@+id/back"
+        swipe:swipeCloseAllItemsWhenMoveList="true"
+        swipe:swipeFrontView="@+id/front"
+        swipe:swipeMode="right"
+        swipe:swipeOffsetRight="40dp"
+        swipe:swipeOpenOnLongPress="false" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/playlist_menu_height"
+        android:layout_alignParentBottom="true"
+        layout="@layout/playlist_bottom_menu" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_play_now_playlist_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <ImageView
+            android:id="@+id/refresh_image"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:paddingBottom="50dp"
+            android:src="@drawable/refresh" />
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            style="@style/PlayNowArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/refresh_image"
+            android:text="@string/playlist_refresh"
+            android:textSize="25sp"
+            app:font="cbold" />
+    </RelativeLayout>
+
+</RelativeLayout>

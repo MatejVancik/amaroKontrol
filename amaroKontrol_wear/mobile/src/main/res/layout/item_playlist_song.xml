@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#77000000">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="40dp"
+        android:orientation="horizontal"
+        android:tag="back"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/playlist_back_view_download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/artist_detail_click_selector"
+            android:src="@drawable/down" />
+
+        <ImageButton
+            android:id="@+id/playlist_back_view_remove"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/artist_detail_click_selector"
+            android:src="@drawable/trash" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:tag="front">
+
+        <ImageView
+            android:id="@+id/listSongPlayingIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/listSongTitle"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/listSongTitle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_now_play_tab"
+            android:visibility="gone" />
+
+        <com.mv2studio.amarok.kontrol.ui.View.CustomTextView
+            android:id="@+id/listSongTitle"
+            style="@style/PlayNowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="false"
+            android:layout_toRightOf="@+id/listSongPlayingIcon"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            app:font="clight" />
+    </RelativeLayout>
+
+</FrameLayout>

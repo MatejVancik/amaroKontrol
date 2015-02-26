@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="@string/pref_connection_group"
+        android:title="@string/pref_connection_group" >
+        <EditTextPreference
+            android:defaultValue=""
+            android:key="pref_remote_server"
+            android:summary="@string/pref_remote_server_sum"
+            android:title="@string/pref_remote_server" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_allow_3g"
+            android:summary="@string/pref_allow_3g_sum"
+            android:title="@string/pref_allow_3g" />
+
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="@string/pref_interval_title"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="pref_interval"
+            android:summary="@string/pref_interval_sum"
+            android:title="@string/pref_interval" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/pref_notifications_group"
+        android:title="@string/pref_notifications_group" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_show_notify"
+            android:summary="@string/pref_show_notify_sum"
+            android:title="@string/pref_show_notify" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_notify_photo"
+            android:summary="@string/pref_notify_photo_sum"
+            android:title="@string/pref_notify_photo" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/pref_notify_interval_title"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="pref_notify_interval"
+            android:summary="@string/pref_notify_interval_sum"
+            android:title="@string/pref_notify_interval" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="@string/pref_misc_group"
+        android:title="@string/pref_misc_group" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_volume_change"
+            android:summary="@string/pref_volume_change_sum"
+            android:title="@string/pref_volume_change" />
+
+        <ListPreference
+            android:defaultValue="5"
+            android:dialogTitle="@string/pref_vol_step_title"
+            android:entries="@array/volumeStep"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="pref_vol_step"
+            android:summary="@string/pref_vol_step_sum"
+            android:title="@string/pref_vol_step" />
+        
+        <ListPreference
+            android:defaultValue="20"
+            android:dialogTitle="@string/pref_background_blur_title"
+            android:entries="@array/blurIntensity"
+            android:entryValues="@array/blurIntensityValues"
+            android:key="pref_blur"
+            android:summary="@string/pref_background_blur_sum"
+            android:title="@string/pref_background_blur" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_close_playlist"
+            android:summary="@string/pref_close_playlist_sum"
+            android:title="@string/pref_close_playlist" />
+
+        <Preference
+            android:key="pref_clear_cache"
+            android:summary="@string/pref_clean_cache_sum"
+            android:title="@string/pref_clean_cache" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

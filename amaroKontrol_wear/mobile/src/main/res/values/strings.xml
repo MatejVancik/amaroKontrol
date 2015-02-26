@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">amaroKontrol</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="menu_play_now">PlayNow</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_collection">Collections</string>
+    
+    <string name="pref_remote_server">Remote server</string>
+    <string name="pref_remote_server_sum">address:port of Amarok Plugin server. Port is optional. (Default port: 8484 is added automatically)</string>
+    <string name="pref_update_interval">Update interval</string>
+    <string name="pref_update_interval_sum">Time between updates</string>
+    <string name="pref_allow_3g">Allow mobile data</string>
+    <string name="pref_allow_3g_sum">Allows amaroKontrol use your mobile data to connect to amarok player</string>
+    <string name="pref_volume_change">Use volume buttons</string>
+    <string name="pref_volume_change_sum">Change volume with volume buttons</string>
+    <string name="pref_show_notify">Show notification</string>
+    <string name="pref_show_notify_sum">Show notification about current playing track</string>
+    <string name="pref_notify_photo">Show photo</string>
+    <string name="pref_notify_photo_sum">Show artist\'s photo in expanded notification</string>
+    <string name="pref_notify_interval">Notification update interval</string>
+    <string name="pref_notify_interval_sum">Time between notification updates outside app</string>
+    <string name="pref_notify_interval_title">Update after</string>
+    <string name="pref_interval">Update interval</string>
+    <string name="pref_interval_sum">Time between updates</string>
+    <string name="pref_interval_title">Update after</string>
+    <string name="pref_vol_step">Volume step</string>
+    <string name="pref_vol_step_sum">Increase/decrease volume by</string>
+    <string name="pref_vol_step_title">Choose volume step</string>
+    <string name="pref_close_playlist">Close playlist by changing song</string>
+    <string name="pref_close_playlist_sum">Slide playlist to background by changing current song</string>
+    <string name="pref_clean_cache">Clear cache</string>
+    <string name="pref_clean_cache_sum">Remove all cover arts and artists\' photos</string>
+    <string name="pref_clean_cache_running">Clearing..</string>
+    <string name="pref_clean_cache_OK">Clearing done!</string>
+    <string name="pref_clean_cache_error">Error during clearing cache!</string>
+    
+	<!-- 	NEW       -->
+    <string name="pref_background_blur_title">Choose intensity</string>
+    <string name="pref_background_blur">Background blur intensity</string>
+    <string name="pref_background_blur_sum">Set background image blur intensity.</string>    
+    <string name="pref_blur_slight">Slight</string>
+    <string name="pref_blur_moderate">Normal</string>
+    <string name="pref_blur_strong">Strong</string>
+    <string name="pref_blur_insane">Insane</string>
+    
+    <string name="collection_no_amarok">Looks like there\'s no \namaroK to Kontrol</string>
+	<string name="collection_no_music">Your collection is empty.</string>
+	
+	<string name="download">Download</string>
+	<string name="remove">Remove</string>
+    <!-- 	NEW       -->
+    
+    
+    <string name="pref_connection_group">Connection</string>
+    <string name="pref_misc_group">Misc</string>
+    <string name="pref_notifications_group">Notifications</string>
+    
+    <string name="update_one">One second</string>
+    <string name="update_two">Two seconds</string>
+    <string name="update_three">Three seconds</string>
+    <string name="update_five">Five seconds</string>
+    <string name="update_ten">Ten seconds</string>
+    
+    <string name="step_one">One percent</string>
+    <string name="step_two">Two percent</string>
+    <string name="step_three">Three percent</string>
+    <string name="step_five">Five percent</string>
+    <string name="step_ten">Ten percent</string>
+    
+    <string name="navbar_caching">Caching photos:</string>
+    <string name="navbar_downloading_song">Downloading song:</string>
+    <string name="not_playing">Not playing</string>
+    <string name="press_play">Press play</string>
+    <string name="click_playlist_item">or tap any song in playlist.</string>
+    <string name="amarok_not_on">Amarok is not running</string>
+    <string name="amarok_bad_ip">or bad IP is set</string>
+    <string name="connection_unavailable">Connection unavailable</string>
+    <string name="please_turn_on_wifi">Please, turn on Wi-Fi</string>
+    <string name="enable_3g">or allow mobile data in settings</string>
+    <string name="playlist_refresh">Tap to refresh playlist</string>
+    <string name="not_connected">Not connected!</string>
+
+    <string name="search_too_many">Please, be more specific</string>
+    <string name="search_not_found">No such thing in your collection</string>
+    <string name="search_holder">Search your collection</string>
+    <string name="search">SEARCH</string>
+    
+    <string name="help">Help</string>
+    <string name="help_settings">In Amarok go to Settings > Configure Amarok... </string>
+	<string name="help_script">On left side click Scripts, then on bottom right Manage Scripts.</string>
+	<string name="help_kontrol">Search for "amaroKontrol" and hit install next to it.</string>
+	<string name="help_kontrol_update">Search for "amaroKontrol" and hit update next to it if it\'s present.</string>
+	<string name="help_restart">Restart Amarok and you\'re done.</string>
+	<string name="help_update_title">UPDATE</string>
+	<string name="help_update_subtitle">Please make sure you are using updated version of amaroKontrol script. Follow these steps to check for update:</string>
+	<string name="update_script">Please, update script for amarok.</string>
+
+	<string name="request_feature">Request a feature</string>
+	<string name="report_bug">Report a bug</string>
+
+	<string name="no_lyrics">No lyrics.</string>
+    <string name="running">Running...</string>
+</resources>

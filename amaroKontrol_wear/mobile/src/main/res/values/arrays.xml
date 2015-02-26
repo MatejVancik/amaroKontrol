@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="volumeStep">
+        <item name="1">@string/step_one</item>
+        <item name="2">@string/step_two</item>
+        <item name="3">@string/step_three</item>
+        <item name="5">@string/step_five</item>
+        <item name="10">@string/step_ten</item>
+    </string-array>
+    
+    <string-array name="updateInterval">
+        <item name="1">@string/update_one</item>
+        <item name="2">@string/update_two</item>
+        <item name="3">@string/update_three</item>
+        <item name="5">@string/update_five</item>
+        <item name="10">@string/update_ten</item>
+    </string-array>
+    
+    <string-array name="updateIntervalValues">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">3</item>
+        <item name="5">5</item>
+        <item name="10">10</item>
+    </string-array>
+    
+    <string-array name="blurIntensity">
+        <item name="1">@string/pref_blur_slight</item>
+        <item name="2">@string/pref_blur_moderate</item>
+        <item name="3">@string/pref_blur_strong</item>
+        <item name="4">@string/pref_blur_insane</item>
+    </string-array>
+    
+    <string-array name="blurIntensityValues">
+        <item name="1">10</item>
+        <item name="2">20</item>
+        <item name="3">30</item>
+        <item name="4">50</item>
+    </string-array>
+    
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="one">1</integer>
+    <integer name="artist_mini_photo_dimen">128</integer>
+    <integer name="notify_cover_dimen">256</integer>
+</resources>
