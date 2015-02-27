@@ -9,6 +9,7 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -142,7 +143,14 @@ public class BaseActivity extends FragmentActivity {
 
         if (!Storage.getBoolValue(Constants.CONST_UPDATE_SCRIPT)) {
             AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(this);
-            dialogBuilder.setView(View.inflate(this, R.layout.dialog_update, null));
+            View dialogLayout = View.inflate(this, R.layout.dialog_update, null);
+            dialogLayout.findViewById(R.id.githubImage).setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(Constants.URL_GITHUB)));
+                }
+            });
+            dialogBuilder.setView(dialogLayout);
             dialogBuilder.show();
             Storage.storeBoolValue(Constants.CONST_UPDATE_SCRIPT, true);
         }

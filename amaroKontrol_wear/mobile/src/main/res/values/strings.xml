@@ -94,7 +94,8 @@
 	<string name="help_kontrol">Search for "amaroKontrol" and hit install next to it.</string>
 	<string name="help_kontrol_update">Search for "amaroKontrol" and hit update next to it if it\'s present.</string>
 	<string name="help_restart">Restart Amarok and you\'re done.</string>
-	<string name="help_update_title">UPDATE</string>
+	<string name="help_update_title">UPDATES &amp; NEWS</string>
+    <string name="help_update_git">amaroKontrol source code is now available! Check it out:</string>
 	<string name="help_update_subtitle">Please make sure you are using updated version of amaroKontrol script. Follow these steps to check for update:</string>
 	<string name="update_script">Please, update script for amarok.</string>
 

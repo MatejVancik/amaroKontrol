@@ -11,6 +11,9 @@ public abstract class Constants {
 
     public static final String COMM_PLAYER_DISCONNECTED = "player_disconnected";
 
+    public static final String URL_GITHUB = "https://github.com/MatejVancik/amaroKontrol";
+    
+    
     public static final String CONST_UPDATE_SCRIPT = "update_script_message";
 
     public static final String COMM_PATH_SONG = "/song";
