@@ -1,7 +1,7 @@
 # amaroKontrol  
 Remote control for Amarok music player.
 
-[![Download from Google Play](https://dl.dropboxusercontent.com/u/17229025/Android/amarokontrol/AmarokPromoSmall.png)](https://play.google.com/store/apps/details?id=com.mv2studio.amarok.kontrol.free)
+[![Download from Google Play](https://raw.githubusercontent.com/MatejVancik/amaroKontrol/readme-fix/AmarokPromoSmall.png)](https://play.google.com/store/apps/details?id=com.mv2studio.amarok.kontrol.free)
 
 
 # Download  
