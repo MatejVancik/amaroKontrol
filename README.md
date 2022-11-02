@@ -14,6 +14,7 @@ You can download this app directly from Google Play Store!
 * **47 Degrees** for [SwipeListView](https://github.com/47deg/android-swipelistview)
 * **GojaN** for [Amarok 2 Android script](http://kde-apps.org/content/show.php/Amarok+2+Android?content=141974)
 
+
 License
 ---
 
